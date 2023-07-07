@@ -309,6 +309,10 @@ export class Nettruyen implements AbstractMangaFactory {
     await _page.goto(url);
     const content = await _page.$('#ctl00_divCenter');
     const title = await content!.$eval('article > h1', (el) => el.textContent);
+    const description = await content!.$eval('#item-detail > div.detail-content > p', (el) => el.textContent) || '';
+    const thumbnail = await content!.$eval('#item-detail > div.detail-info > div > div.col-xs-4.col-image > img', (el) => el.getAttribute('src')) || '';
+    console.log(thumbnail, description);
+    
     const path = url.substring(`${this.baseUrl}`.length);
     const author = await content!.$eval(
       '#item-detail > div.detail-info > div > div.col-xs-8.col-info > ul > li.author.row > p.col-xs-8',
@@ -414,6 +418,10 @@ export class Nettruyen implements AbstractMangaFactory {
       rate_number,
       follows,
       chapters,
+      description,
+      thumbnail: thumbnail.startsWith('//')
+        ? `https:${thumbnail}`
+        : thumbnail,
     };
   }
 

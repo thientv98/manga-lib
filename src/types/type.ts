@@ -42,6 +42,8 @@ export type responseDetailManga = {
   rate?: string;
   rate_number?: string;
   follows?: string;
+  description?: string;
+  thumbnail?: string;
   chapters: chapter[];
 };
 
