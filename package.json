@@ -1,7 +1,7 @@
 {
-  "name": "manga-lib",
+  "name": "manga-crawl-lib",
   "author": "Thientv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A library for scraping manga from various websites.",
   "repository": "https://github.com/thientv98/manga-lib",
@@ -24,7 +24,7 @@
     "manga crawl",
     "manga crawler",
     "manga scrapper",
-    "manga-lib",
+    "manga-crawl-lib",
     "manga api",
     "blogtruyen",
     "blogtruyen.vn",

@@ -1,8 +1,8 @@
-# manga-lib
+# manga-crawl-lib
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-manga-lib is a library that allows you to easily scrape manga content from various websites.
+manga-crawl-lib is a library that allows you to easily scrape manga content from various websites.
 
 ## Features
 
@@ -16,16 +16,16 @@ Install the library using npm:
 
 ```
 
-npm i manga-lib
+npm i manga-crawl-lib
 
 ```
 
 ## Usage
 
-Here's an example of how to use manga-lib in your code:
+Here's an example of how to use manga-crawl-lib in your code:
 
 ```javascript
-const { Manga, MangaType } = require('manga-lib');
+const { Manga, MangaType } = require('manga-crawl-lib');
 
 // Create a new instance of the manga site, MangaType.NETTRUYEN is currently support for https://www.nettruyenplus.com/
 const manga = new Manga().build(MangaType.TOONILY);
@@ -54,7 +54,7 @@ const search_manga = await manga.search('one piece');
 
 ## Supported Websites
 
-The manga-lib currently supports the following manga websites (updating):
+The manga-crawl-lib currently supports the following manga websites (updating):
 
 - nettruyen
 
