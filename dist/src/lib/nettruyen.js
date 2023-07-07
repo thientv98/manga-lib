@@ -212,7 +212,6 @@ class Nettruyen {
             const title = yield content.$eval('article > h1', (el) => el.textContent);
             const description = (yield content.$eval('#item-detail > div.detail-content > p', (el) => el.textContent)) || '';
             const thumbnail = (yield content.$eval('#item-detail > div.detail-info > div > div.col-xs-4.col-image > img', (el) => el.getAttribute('src'))) || '';
-            console.log(thumbnail, description);
             const path = url.substring(`${this.baseUrl}`.length);
             const author = yield content.$eval('#item-detail > div.detail-info > div > div.col-xs-8.col-info > ul > li.author.row > p.col-xs-8', (el) => el.textContent);
             const status = yield content.$eval('#item-detail > div.detail-info > div > div.col-xs-8.col-info > ul > li.status.row > p.col-xs-8', (el) => el.textContent);

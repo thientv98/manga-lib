@@ -1,7 +1,7 @@
 {
   "name": "manga-crawl-lib",
   "author": "Thientv",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "A library for scraping manga from various websites.",
   "repository": "https://github.com/thientv98/manga-lib",
